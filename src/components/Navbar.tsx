@@ -1,4 +1,5 @@
 import React from "react";
+import '@fontsource/roboto/700.css';
 import {
   AppBar,
   Toolbar,
@@ -12,6 +13,9 @@ import { Link } from "react-router-dom";
 import DrawerComponent from "./Drawer";
 
 const useStyles = makeStyles((theme) => ({
+  nav: {
+    background: "black",
+  },
   navlinks: {
     marginLeft: theme.spacing(5),
     display: "flex",
@@ -19,18 +23,23 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     flexGrow: 1,
     cursor: "pointer",
+    color: "#9537F6",
+    marginLeft: theme.spacing(30),
   },
   link: {
     textDecoration: "none",
     color: "white",
-    fontSize: "20px",
-    marginLeft: theme.spacing(20),
+    fontSize: "18px",
+    fontFamily: "roboto",
+    marginRight: theme.spacing(40),
+    marginLeft: theme.spacing(-28),
     "&:hover": {
-      color: "yellow",
-      borderBottom: "1px solid white",
+      color: "#9537F6",
+      borderBottom: "0.5px solid #9537F6",
     },
   },
 }));
+
 
 function Navbar() {
   const classes = useStyles();
@@ -38,12 +47,11 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className={classes.nav}>
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          Navbar
-
+          Gaspar
         </Typography>
         {isMobile ? (
           <DrawerComponent />
@@ -57,9 +65,6 @@ function Navbar() {
             </Link>
             <Link to="/contact" className={classes.link}>
               Contact
-            </Link>
-            <Link to="/faq" className={classes.link}>
-              FAQ
             </Link>
           </div>
         )}

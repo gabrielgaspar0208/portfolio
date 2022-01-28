@@ -18,7 +18,7 @@ const useStyles = makeStyles(() => ({
   },
   icon: {
     color: "white"
-  }
+  },
 }));
 
 function DrawerComponent() {
@@ -43,7 +43,7 @@ function DrawerComponent() {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">Contato</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>

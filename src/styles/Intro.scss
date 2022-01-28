@@ -1,0 +1,30 @@
+* {
+  font-family: 'roboto';
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+
+  img {
+    height: 450px;
+    background: cover;
+  }
+}
+
+.intro-text {
+  width: 500px;
+  text-align: center;
+  line-height: 1.1;
+  margin-top: 80px;
+  h1 {
+    font-size: 64px;
+    margin-bottom: -10px;
+  }
+  p {
+    font-size: 24px;
+    
+  }
+}
+
