@@ -1,11 +1,18 @@
 * {
   font-family: 'roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .intro {
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  padding-top: 100px;
+  width: 100%;
+  background-image: url(../assets/images/back-points.svg);
+  height: 700px;
+  
 
   img {
     height: 450px;
@@ -17,10 +24,10 @@
   width: 500px;
   text-align: center;
   line-height: 1.1;
-  margin-top: 80px;
+  margin-top: 110px;
   h1 {
     font-size: 64px;
-    margin-bottom: -10px;
+    margin-bottom: -8px;
   }
   p {
     font-size: 24px;

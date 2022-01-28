@@ -1,14 +1,20 @@
 import gasparIntro from '../assets/images/gaspar-logo.png';
+import Typewriter from 'typewriter-effect';
 import '../styles/Intro.scss';
+
 function Home() {
     return (
-        <div className="intro">
+        <div className="intro" >
             <img src={gasparIntro} alt="foto na intro" />
             <div className="intro-text">
-                <h1>Desenvolvedor Front End & UX/UI Designer</h1>
-                <p>(Iniciante)</p>
+                <Typewriter
+                    onInit={(typewriter) => {
+                        typewriter.typeString("Desenvolvedor Front Emd & UX/UI Designer")
+                            .start();
+                    }}
+                />
             </div>
-        </div>
+        </div >
     );
 }
 
