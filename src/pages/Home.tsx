@@ -1,21 +1,21 @@
 import gasparIntro from '../assets/images/gaspar-logo.png';
 import Typewriter from 'typewriter-effect';
 import '../styles/Intro.scss';
+import { makeStyles, useTheme } from "@material-ui/core";
+import { fontSize } from '@mui/system';
+import { useTranslation } from 'react-i18next';
+import Navbar from '../components/Navbar';
+import Intro from '../components/Intro';
 
 function Home() {
-    return (
-        <div className="intro" >
-            <img src={gasparIntro} alt="foto na intro" />
-            <div className="intro-text">
-                <Typewriter
-                    onInit={(typewriter) => {
-                        typewriter.typeString("Desenvolvedor Front Emd & UX/UI Designer")
-                            .start();
-                    }}
-                />
-            </div>
-        </div >
-    );
+
+  const { t } = useTranslation();
+  return (
+    <main>
+      <Navbar />
+      <Intro />
+    </main>
+  );
 }
 
 export default Home;
