@@ -14,26 +14,44 @@
   height: 100vh;
   overflow: hidden;
   
-
   img {
-    height: 450px;
+    height: 480px;
     background: cover;
   }
 }
 
 span {
-  font-size: 64px;
+  font-size: 66px;
     line-height: 1;
+    color: #171a1b;
 }
 
 .intro-text {
   width: 500px;
   text-align: center;
   line-height: 1.1;
-  margin-top: 115px;
+  margin-top: 150px;
   p {
     font-size: 24px;
     
+  }
+}
+
+.arrow { 
+  font-size: 60px !important;
+  color: #b72a72;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 14vh;
+  animation: go-back 1s infinite alternate;
+}
+
+@keyframes go-back {
+  from {
+    transform: translateY(60px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 

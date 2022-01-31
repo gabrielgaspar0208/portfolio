@@ -6,14 +6,17 @@ import { fontSize } from '@mui/system';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../components/Navbar';
 import Intro from '../components/Intro';
+import About from '../components/About';
+import Social from '../components/Social';
 
 function Home() {
 
   const { t } = useTranslation();
   return (
     <main>
-      <Navbar />
       <Intro />
+      <About />
+      <Social />
     </main>
   );
 }

@@ -1,0 +1,63 @@
+.sobre-title {
+  background: #171a1b;
+  height: 100%;
+  width: 100%;
+  padding: 80px 0 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.texto-sobre {
+  text-align: center;
+  width: 1000px;
+
+    a {
+      color: #b72a72; 
+    }
+
+    p {
+      font-size: 26px;
+      color: #F5F7F9;
+      padding: 50px 0 50px 0;
+      line-height: 1.4;
+      font-weight: 700;
+   
+    }
+    h2 {
+      color: #F5F7F9;
+      font-size: 38px;
+      padding-top: 60px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.1em;
+    }
+    h2::after {
+      content: " ";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: #db31a5;
+      margin:0 auto;
+      
+    }
+    :hover {
+      transform: scale(1.02);   
+      cursor:default; 
+    }
+
+    
+}
+
+
+
+section .code-icon {
+ color:#db31a5;
+ font-size: 60px !important;
+}
+
+
+
+    
+  
+
+
