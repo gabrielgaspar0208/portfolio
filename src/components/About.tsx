@@ -1,6 +1,8 @@
 import '../styles/about.scss';
 import '@fontsource/roboto/700.css';
 import Code from '@material-ui/icons/Code';
+import Javascript from '@material-ui/icons/'
+import JavascriptIcon from '@material-ui/icons/';
 
 function About() {
     return (
@@ -13,7 +15,7 @@ function About() {
                 </p>
                 <Code className="code-icon" />
             </div>
-            
+
         </section>
     );
 }
