@@ -15,7 +15,7 @@ function About() {
       <section className="sobre-title">
           <div className="texto-sobre">
               <h2>Quem eu sou?</h2>
-               <p>Opa, o meu nome é Gabriel Gaspar tenho 21 anos e estou cursando Ciência da Computação
+               <p>Opa, o meu nome é Gabriel Gaspar tenho 21 anos e estou cursando 🎓Analise e Desenvolvimento de Sistemas na
                 na <strong>Uniritter</strong>, também estudo outras tecnologias referentes ao Front-end
                 como <strong>UX / UI Design</strong> que estudo através da <a target="_blank" href="https://www.origamid.com/">Origamid!</a>
                </p>
@@ -42,7 +42,7 @@ function About() {
                                 className="social-icon" /></a>
                         <p>Instagram</p>
                     </li>
-                    <li>
+                    <li>                     
                         <a href="https://wa.me/qr/BJUY22DUUHJPL1" target="_blank"><WhatsAppIcon
                             className="social-icon" /></a>
                         <p>WhatsApp</p>

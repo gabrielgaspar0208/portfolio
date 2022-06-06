@@ -15,6 +15,7 @@ import DrawerComponent from "./Drawer";
 const useStyles = makeStyles((theme) => ({
   nav: {
     background: "#171A1B",
+    padding: "8px",
     
   },
   navlinks: {
