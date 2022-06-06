@@ -14,7 +14,8 @@ import DrawerComponent from "./Drawer";
 
 const useStyles = makeStyles((theme) => ({
   nav: {
-    background: "black",
+    background: "#171A1B",
+    
   },
   navlinks: {
     marginLeft: theme.spacing(5),
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     flexGrow: 1,
     cursor: "pointer",
-    color: "#9537F6",
+    color: "#b72a72",
     marginLeft: theme.spacing(30),
   },
   link: {
@@ -34,8 +35,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(40),
     marginLeft: theme.spacing(-28),
     "&:hover": {
-      color: "#9537F6",
-      borderBottom: "0.5px solid #9537F6",
+      color: "#b72a72",
     },
   },
 }));
@@ -58,13 +58,13 @@ function Navbar() {
         ) : (
           <div className={classes.navlinks}>
             <Link to="/" className={classes.link}>
-              Home
+              Sobre
             </Link>
             <Link to="/about" className={classes.link}>
-              About
+              Projetos
             </Link>
             <Link to="/contact" className={classes.link}>
-              Contact
+              Contato
             </Link>
           </div>
         )}

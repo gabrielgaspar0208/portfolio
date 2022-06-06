@@ -6,12 +6,7 @@ import htmlIcon from '../assets/images/html.svg';
 function Skills() {
   return (
     <div className="skills-container">
-      <div className="card">
-        <img src={htmlIcon} />
-        <h2>HTML</h2>
-        <p>Avançado: já sei o html semântico</p>
-      </div>
-      <img src={wave} />
+      <h1>Skills</h1>
     </div>
   );
 }

@@ -16,9 +16,9 @@ function Intro() {
       <div className="intro-text">
         <Typewriter
           onInit={(typewriter) => {
-            typewriter.typeString("Desenvolvedor Front End & UX/UI Designer")
+            typewriter.typeString("Desenvolvedor Front End jr.")
               .start()
-              .changeDeleteSpeed(300)
+              .changeDeleteSpeed(100)
 
           }}
         />
