@@ -8,11 +8,12 @@ import {
   makeStyles,
   useTheme,
   useMediaQuery,
+  Theme,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from "./Drawer";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme: Theme) => ({
   nav: {
     background: "#171A1B",
     padding: "8px",

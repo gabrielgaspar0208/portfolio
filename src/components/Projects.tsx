@@ -1,15 +1,16 @@
+import Slide from '../components/slide/Slide';
 import '../styles/projects.scss';
 
-function projects() {
-  return (
-    <div className="projects-container">
-      <div>
 
-        <h2></h2>
-        <p></p> 
-      </div>
-    </div>
+function Projects() {
+  return (
+    <section id="projects">
+      <h2>Alguns Projetos</h2>
+        <div>
+          <Slide />
+        </div>
+    </section>
   );
 }
 
-export default projects;
+export default Projects;

@@ -1,4 +1,16 @@
-.projects-container {
-  height: 600px;
-  width: 100%;
+h2 {
+  color: #171a1b;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+h2::after {
+content: " ";
+display: block;
+width: 70px;
+height: 3px;
+background: #db31a5;
+margin:0 auto;
 }

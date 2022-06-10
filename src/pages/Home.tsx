@@ -4,8 +4,9 @@ import { makeStyles, useTheme } from "@material-ui/core";
 import { fontSize } from '@mui/system';
 import Intro from '../components/Intro';
 import About from '../components/About';
-import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 import Navbar from '../components/nav/Navbar';
+import Projects from '../components/Projects';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Navbar />
       <Intro />
       <About />
+      <Skills />
       <Projects />
     </main>
   );
