@@ -1,0 +1,37 @@
+.quote-container {
+  background-image: url('../assets/images/basketball-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  width: 100%;
+
+  span {
+    font-size: 36px;
+    color: #FAFAFA;
+  }
+
+  p {
+  padding-top: 120px;
+  font-style: italic;
+  font-size: 68px;
+  color:#FAFAFA;
+  }
+
+}
+
+.quote-container p::before, p::after {
+  font-size: 5rem;
+  color: #FAFAFA;
+ 
+}
+
+.quote-container p::before {
+  content: "“";
+
+}
+
+.quote-container p::after {
+  content: "”";
+}
+

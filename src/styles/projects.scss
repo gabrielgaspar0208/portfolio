@@ -10,6 +10,7 @@ h1 {
   line-height: 1.2;
   letter-spacing: 0.1em;
   text-align: center;
+  padding-top: 60px;
 }
 h1::after {
 content: " ";
@@ -24,7 +25,7 @@ margin:0 auto;
   display: grid;
   grid-template-columns:repeat(auto-fit, minmax(300px, 400px));
   justify-content: space-evenly;
-  margin-top: 10vh;
+  margin: 10vh 0;
   grid-row-gap: 1em;
  
 }
@@ -32,7 +33,7 @@ margin:0 auto;
 .list-item { 
   height: 360px;
   width: 100%;
-  background-color: #835AFD;
+  background-color: #171a1b;
   border-radius: 0.5em;
   
   a {
@@ -45,7 +46,7 @@ margin:0 auto;
   }
 
   h2 {
-    color: #F5F7F9;
+    color: #FAFAFA;
    padding-top: 0.5em;
     text-align: center;
   }
@@ -54,13 +55,14 @@ margin:0 auto;
     text-align: center;
     padding-top: 1em;
     font-size: 16px;
-    color: #171a1b;
+    color: #FAFAFA;
   }
 
   p {
+    font-size: 16px;
     opacity: 0;
     padding-top: 1em;
-    color: #835AFD;
+    color: #FAFAFA;
     text-align: center;
     animation: pops ease-in-out 0.5s;
    
@@ -76,15 +78,11 @@ margin:0 auto;
   background: rgba(15,20,30,.9);
     display: block;
 
-  h5 {
-    color: #F5F7F9;
-    }
   p {
     opacity: 1;
-    color: #F5F7F9;
   }
   img {
-    opacity:0.96;
+    opacity:0.98;
   }
 }
 
