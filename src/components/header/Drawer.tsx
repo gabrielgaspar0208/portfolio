@@ -13,11 +13,15 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles(() => ({
   link: {
     textDecoration: "none",
-    color: "blue",
-    fontSize: "20px",
+    color: "#171a1b",
+    fontSize: "24px",
+    padding: '60px',
+  },
+  list: {
+    marginTop: '60px',
   },
   icon: {
-    color: "white"
+    color: "white",
   },
 }));
 
@@ -30,31 +34,32 @@ function DrawerComponent() {
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
       >
-        <List>
+        <List className={classes.list}>         
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/">Home</Link>
+              <Link
+               className={classes.link} to="/">Sobre</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about">About</Link>
+              <Link className={classes.link} to="/skills">Skills</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/contact">Contato</Link>
+              <Link className={classes.link} to="/projects">Projetos</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about">Faq</Link>
+              <Link className={classes.link} to="/contact">Contato</Link>
             </ListItemText>
           </ListItem>
         </List>
       </Drawer>
       <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon />
+        <MenuIcon className={classes.icon} />
       </IconButton>
     </>
   );

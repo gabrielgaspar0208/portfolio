@@ -5,6 +5,7 @@
   height: 50vh;
   text-align: center;
   width: 100%;
+  display: block;
 
   span {
     font-size: 36px;
@@ -35,3 +36,22 @@
   content: "”";
 }
 
+@media only screen and (max-width: 1278px) {
+  
+  .quote-container {
+    height: 35vh;
+    p {
+      font-size: 36px;
+    }
+    P::before {
+      font-size: 2rem;
+    }  
+     p::after {
+      font-size: 2rem;   
+    } 
+    span {
+      font-size: 28px;
+    } 
+  }
+ 
+}

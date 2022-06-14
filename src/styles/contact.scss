@@ -7,7 +7,7 @@
     letter-spacing: 0.1em;
     text-align: center;
     padding-top: 60px;
-    margin:0 0 80px 0;
+    margin:0 0 50px 0;
  
   }
   h1::after {
@@ -27,11 +27,10 @@
   display: flex;
   justify-content: center;
  
-
 }
 
 .contact {
-  height: 100%;
+  height: 400px;
   width: 500px;
   padding: 50px;
   
@@ -107,4 +106,12 @@
     height: 1px;
     background: #835AFD;
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 1278px) {
+  .contact-container {
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+  }
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import '@fontsource/roboto/700.css';
+import DrawerComponent from "./Drawer";
+
 import {
   AppBar,
   Toolbar,
@@ -10,8 +10,7 @@ import {
   useMediaQuery,
   Theme,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
-import DrawerComponent from "./Drawer";
+
 
 const useStyles = makeStyles((theme: Theme) => ({
   nav: {
@@ -25,9 +24,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   logo: {
     flexGrow: 1,
-    cursor: "pointer",
-    color: "#b72a72",
-    marginLeft: theme.spacing(30),
+    color: "#835AFD",
+    marginLeft: theme.spacing(15),
   },
   link: {
     textDecoration: "none",
@@ -37,7 +35,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     marginRight: theme.spacing(40),
     marginLeft: theme.spacing(-28),
     "&:hover": {
-      color: "#b72a72",
+      color: "#835AFD",
     },
   },
 }));
@@ -59,15 +57,18 @@ function Navbar() {
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
-            <Link to="/" className={classes.link}>
+            <a href="#about" className={classes.link}>
               Sobre
-            </Link>
-            <Link to="/about" className={classes.link}>
+            </a>
+            <a href="#skills" className={classes.link}>
+              Skills
+            </a>
+            <a href="#projects" className={classes.link}>
               Projetos
-            </Link>
-            <Link to="/contact" className={classes.link}>
+            </a>
+            <a href="#contact" className={classes.link}>
               Contato
-            </Link>
+            </a>
           </div>
         )}
       </Toolbar>

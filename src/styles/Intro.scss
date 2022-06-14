@@ -55,3 +55,28 @@ span {
   }
 }
 
+
+@media only screen and (max-width: 1278px) {
+
+  .intro-container {
+    img {
+      height: 380px;
+      position: absolute;
+      top: 0;
+      margin-top: 15vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .intro-container {
+    img {
+      height: 320px;
+      position: absolute;
+      top: 0;
+      margin-top: 15vh;
+    }
+  }
+}
+
